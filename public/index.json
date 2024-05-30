@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Projet d'étude",
+  "main": "index.html",
+  "scripts": {
+    "start": "set HTTPS=true&&set SSL_CRT_FILE=./certificate.crt&&set SSL_KEY_FILE=./privatekey.key&&react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    },
+ "dependencies": {"react-scripts": "^5.0.1"},
+  "author": "Wassim Moataz",
+  "license": "ISC"
+}
